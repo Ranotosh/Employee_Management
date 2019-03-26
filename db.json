@@ -1,0 +1,169 @@
+{
+  "employees": [
+    {
+      "id": 5,
+      "fullname": "Ranotosh Pal",
+      "email": "paul@gmail.com",
+      "confirmemail": "",
+      "phone": "033265422222",
+      "skills": [
+        {
+          "skillname": "Angual",
+          "expinyears": "3",
+          "proficiency": "expert"
+        }
+      ],
+      "contactpref": "phone"
+    },
+    {
+      "id": 6,
+      "fullname": "Tathagata Ray",
+      "email": "tathaaaa@gmail.com",
+      "confirmemail": "",
+      "phone": "77223312177",
+      "skills": [
+        {
+          "skillname": "zmxc",
+          "expinyears": "6",
+          "proficiency": "beginner"
+        }
+      ],
+      "contactpref": "phone"
+    },
+    {
+      "id": 7,
+      "fullname": "Ananya Paul",
+      "email": "ananyapaul@gmail.com",
+      "confirmemail": "",
+      "phone": "9886617005",
+      "skills": [
+        {
+          "skillname": "Java",
+          "expinyears": "3",
+          "proficiency": "expert"
+        }
+      ],
+      "contactpref": "email"
+    },
+    {
+      "id": 8,
+      "fullname": "Soumya Shankha Banerjee",
+      "email": "ssb@gmail.com",
+      "confirmemail": "",
+      "phone": "8877332211",
+      "skills": [
+        {
+          "skillname": "Management",
+          "expinyears": "2",
+          "proficiency": "intermediate"
+        }
+      ],
+      "contactpref": "phone"
+    },
+    {
+      "id": 9,
+      "fullname": "Avanti Dasgupta",
+      "email": "avanti@gmail.com",
+      "confirmemail": "",
+      "phone": "4444555565",
+      "skills": [
+        {
+          "skillname": "Finance",
+          "expinyears": "1",
+          "proficiency": "beginner"
+        }
+      ],
+      "contactpref": "email"
+    },
+    {
+      "id": 10,
+      "fullname": "Dipanjan Deb",
+      "email": "dipa@gmail.com",
+      "confirmemail": "",
+      "phone": "1111222234",
+      "skills": [
+        {
+          "skillname": "Java",
+          "expinyears": "4",
+          "proficiency": "expert"
+        }
+      ],
+      "contactpref": "email"
+    },
+    {
+      "id": 11,
+      "fullname": "Sandipan Mitra",
+      "email": "sandy@gmail.com",
+      "confirmemail": "",
+      "phone": "5588990033",
+      "skills": [
+        {
+          "skillname": "Php",
+          "expinyears": "4",
+          "proficiency": "expert"
+        }
+      ],
+      "contactpref": "email"
+    },
+    {
+      "id": 12,
+      "fullname": "Sourav Kabiraj",
+      "email": "sourav@gmail.com",
+      "confirmemail": "",
+      "phone": "3322332233",
+      "skills": [
+        {
+          "skillname": "Nodejs",
+          "expinyears": "3",
+          "proficiency": "expert"
+        }
+      ],
+      "contactpref": "phone"
+    },
+    {
+      "id": 13,
+      "fullname": "Reet Mondal",
+      "email": "reet@gmail.com",
+      "confirmemail": "",
+      "phone": "5555777788",
+      "skills": [
+        {
+          "skillname": "Android",
+          "expinyears": "3",
+          "proficiency": "expert"
+        }
+      ],
+      "contactpref": "email"
+    },
+    {
+      "id": 14,
+      "fullname": "Susmita Agarwal",
+      "email": "suci@gmail.com",
+      "confirmemail": "",
+      "phone": "4433667788",
+      "skills": [
+        {
+          "skillname": "Asp .net",
+          "expinyears": "4",
+          "proficiency": "expert"
+        }
+      ],
+      "contactpref": "phone"
+    },
+    {
+      "id": 15,
+      "fullname": "Nikita Nagraj",
+      "email": "nikita@gmail.com",
+      "confirmemail": "",
+      "phone": "3322112233",
+      "skills": [
+        {
+          "skillname": "Digital Marketing",
+          "expinyears": "5",
+          "proficiency": "expert"
+        }
+      ],
+      "contactpref": "email"
+    }
+  ]
+}

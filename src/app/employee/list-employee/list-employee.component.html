@@ -1,0 +1,55 @@
+<div class="form-group" id="search_input_group">
+  <label class="control-label" for="search">SearchList:</label>
+  <input type="text" class="search_input" name="search" id="searchmodel" placeholder="Search by name"
+    [(ngModel)]="searchText" />
+</div>
+<div class="table-responsive list_table">
+  <table class="table table-bordered">
+    <thead>
+      <tr class="bg-primary">
+        <!-- <th>ID</th> -->
+        <th  (click)="sort('fullname')">Name
+          <i class="fa" [ngClass]="{'fa-sort': column != 'fullname', 
+          'fa-sort-asc': (column == 'fullname' && isDesc), 
+          'fa-sort-desc': (column == 'fullname' && !isDesc) }" aria-hidden="true" style="cursor:pointer">
+          </i>
+
+        </th>
+        <th (click)="sort('email')">Email
+          <i class="fa" [ngClass]="{'fa-sort': column != 'email', 
+          'fa-sort-asc': (column == 'email' && isDesc), 
+          'fa-sort-desc': (column == 'email' && !isDesc) }" aria-hidden="true" style="cursor:pointer">
+          </i>
+        </th>
+        <th (click)="sort('phone')">Phone
+          <i class="fa" [ngClass]="{'fa-sort': column != 'phone', 
+          'fa-sort-asc': (column == 'phone' && isDesc), 
+          'fa-sort-desc': (column == 'phone' && !isDesc) }" aria-hidden="true" style="cursor:pointer">
+          </i>
+        </th>
+        <th>Contact Preference</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        *ngFor="let emps of employees | searchfilter : searchText |  sortpipe: {property: column, direction: direction} | paginate: { itemsPerPage: 4, currentPage: p };let i=index">
+        <!-- <td>{{employee.id}}</td> -->
+        <td>{{emps.fullname}}</td>
+        <td>{{emps.email}}</td>
+        <td>{{emps.phone}}</td>
+        <td>{{emps.contactpref}}</td>
+        <td>
+
+          <button class="btn btn-primary" (click)="editbutton(emps.id)">Edit</button>
+          <button class="fa fa-trash button_trash" type="button" (click)="deleteFieldValue(emps.id,i)"></button>
+
+        </td>
+
+      </tr>
+    </tbody>
+  </table>
+  <div style="float:right">
+    <pagination-controls (pageChange)="p = $event"></pagination-controls>
+  </div>
+</div>

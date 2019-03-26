@@ -1,0 +1,14 @@
+.help-block{
+    margin-bottom: 0px !important;
+    margin-top:0px !important;
+}
+.form-control + span{
+    height:0px !important;
+    
+}
+.form-group{
+    margin-bottom: 20px !important;
+}
+/* .middle{
+    transform: translate(340px,50px);
+} */
