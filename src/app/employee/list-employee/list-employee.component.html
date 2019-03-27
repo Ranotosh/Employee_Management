@@ -8,7 +8,7 @@
     <thead>
       <tr class="bg-primary">
         <!-- <th>ID</th> -->
-        <th  (click)="sort('fullname')">Name
+        <th (click)="sort('fullname')">Name
           <i class="fa" [ngClass]="{'fa-sort': column != 'fullname', 
           'fa-sort-asc': (column == 'fullname' && isDesc), 
           'fa-sort-desc': (column == 'fullname' && !isDesc) }" aria-hidden="true" style="cursor:pointer">
@@ -32,21 +32,27 @@
       </tr>
     </thead>
     <tbody>
-      <tr
-        *ngFor="let emps of employees | searchfilter : searchText |  sortpipe: {property: column, direction: direction} | paginate: { itemsPerPage: 4, currentPage: p };let i=index">
-        <!-- <td>{{employee.id}}</td> -->
-        <td>{{emps.fullname}}</td>
-        <td>{{emps.email}}</td>
-        <td>{{emps.phone}}</td>
-        <td>{{emps.contactpref}}</td>
-        <td>
+      <ng-container *ngIf="( employees | searchfilter : searchText ) as result">
+        <tr
+          *ngFor="let emps of result |  sortpipe: {property: column, direction: direction} | paginate: { itemsPerPage: 4, currentPage: p };let i=index">
+          <!-- <td>{{employee.id}}</td> -->
+          <td>{{emps.fullname}}</td>
+          <td>{{emps.email}}</td>
+          <td>{{emps.phone}}</td>
+          <td>{{emps.contactpref}}</td>
+          <td>
 
-          <button class="btn btn-primary" (click)="editbutton(emps.id)">Edit</button>
-          <button class="fa fa-trash button_trash" type="button" (click)="deleteFieldValue(emps.id,i)"></button>
+            <button class="btn btn-primary" (click)="editbutton(emps.id)">Edit</button>
+            <button class="fa fa-trash button_trash" type="button" (click)="deleteFieldValue(emps.id,i)"></button>
 
-        </td>
+          </td>
 
-      </tr>
+
+        </tr>
+        <tr *ngIf="result?.length === 0">
+          <td colspan="5">No data is available</td>
+        </tr>
+      </ng-container>
     </tbody>
   </table>
   <div style="float:right">
