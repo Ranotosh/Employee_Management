@@ -24,7 +24,7 @@ export class ListEmployeeComponent implements OnInit {
   }
 
   ngOnInit() {
-    
+
 
     this._empservice.getEmplyee()
       .subscribe(data => this.employees = data.reverse()

@@ -46,21 +46,6 @@
       "contactpref": "email"
     },
     {
-      "id": 8,
-      "fullname": "Soumya Shankha Banerjee",
-      "email": "ssb@gmail.com",
-      "confirmemail": "",
-      "phone": "8877332211",
-      "skills": [
-        {
-          "skillname": "Management",
-          "expinyears": "2",
-          "proficiency": "intermediate"
-        }
-      ],
-      "contactpref": "phone"
-    },
-    {
       "id": 9,
       "fullname": "Avanti Dasgupta",
       "email": "avanti@gmail.com",
@@ -140,26 +125,31 @@
       "fullname": "Susmita Agarwal",
       "email": "suci@gmail.com",
       "confirmemail": "",
-      "phone": "4433667788",
+      "phone": "1122112211",
       "skills": [
         {
-          "skillname": "Asp .net",
-          "expinyears": "4",
+          "skillname": ".net",
+          "expinyears": "3",
           "proficiency": "expert"
         }
       ],
-      "contactpref": "phone"
+      "contactpref": "email"
     },
     {
       "id": 15,
-      "fullname": "Nikita Nagraj",
-      "email": "nikita@gmail.com",
+      "fullname": "Sumantra Das",
+      "email": "sumantra@gmail.com",
       "confirmemail": "",
-      "phone": "3322112233",
+      "phone": "4444555542",
       "skills": [
         {
-          "skillname": "Digital Marketing",
-          "expinyears": "5",
+          "skillname": "Angular Js",
+          "expinyears": "4",
+          "proficiency": "expert"
+        },
+        {
+          "skillname": "Node Js",
+          "expinyears": "3",
           "proficiency": "expert"
         }
       ],
